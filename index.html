@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <style>
+        #menu_inp {
+    display: none;
+}
+#menu_inp:checked ~ .menu {
+    display: block;
+}
+.menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding-right: 40px;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+body {
+    background-color: darkorchid;
+}
+#menu_lab {
+    font-size: 30px;
+}
+li:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+li {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+    </style>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="menu_inp" class="menu_inp">
+    <label for="menu_inp" id="menu_lab" class="ht">☰</label>
+    <div class="menu">
+        
+    <ul type="none">
+        <li href="#" ><a>Главная</a></li><br>
+        <li href="#" ><a>Служба подержки</a></li><br>
+        <li href="#" ><a>О нас</a></li><br>
+    </ul>
+    </div>
+</body>
+</html>
